@@ -1,0 +1,104 @@
+/* HEADER TABEL */
+
+.table-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:20px;
+}
+
+.table-header h2{
+    color:#1e40af;
+    margin-bottom:5px;
+}
+
+.table-header p{
+    color:#666;
+    font-size:14px;
+}
+
+/* TABEL */
+
+.mahasiswa-table{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+}
+
+.mahasiswa-table th{
+    background:#2563eb;
+    color:white;
+    padding:14px;
+    text-align:left;
+}
+
+.mahasiswa-table td{
+    padding:12px;
+    border-bottom:1px solid #e5e7eb;
+}
+
+.mahasiswa-table tr:nth-child(even){
+    background:#f8fafc;
+}
+
+.mahasiswa-table tr:hover{
+    background:#dbeafe;
+    transition:0.3s;
+}
+
+/* AKSI */
+
+.aksi{
+    display:flex;
+    gap:8px;
+}
+
+.btn-edit{
+    background:#f59e0b;
+    color:white;
+    text-decoration:none;
+    padding:8px 14px;
+    border-radius:6px;
+    font-size:14px;
+}
+
+.btn-edit:hover{
+    background:#d97706;
+}
+
+.btn-danger{
+    background:#dc2626;
+    color:white;
+    text-decoration:none;
+    padding:8px 14px;
+    border-radius:6px;
+    font-size:14px;
+}
+
+.btn-danger:hover{
+    background:#b91c1c;
+}
+
+/* DATA KOSONG */
+
+.empty-data{
+    text-align:center;
+    padding:20px;
+    color:#777;
+    font-style:italic;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    .table-header{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:10px;
+    }
+
+    .aksi{
+        flex-direction:column;
+    }
+}

@@ -1,0 +1,30 @@
+{% extends 'mahasiswa/base.html' %}
+
+{% block content %}
+
+<div class="card">
+
+    <h2>Hapus Mahasiswa</h2>
+
+    <p>
+        Apakah Anda yakin ingin menghapus
+        <strong>{{ mahasiswa.nama }}</strong> ?
+    </p>
+
+    <br>
+
+    <form method="post">
+        {% csrf_token %}
+
+        <button type="submit" class="btn-danger">
+            Ya, Hapus
+        </button>
+
+        <a href="{% url 'daftar_mahasiswa' %}" class="btn-primary">
+            Batal
+        </a>
+    </form>
+
+</div>
+
+{% endblock %}

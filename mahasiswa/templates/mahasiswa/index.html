@@ -1,0 +1,32 @@
+{% extends 'mahasiswa/base.html' %}
+{% load static %}
+
+{% block title %}Beranda{% endblock %}
+
+{% block content %}
+
+<section class="hero-section">
+    <div class="hero-card">
+<link rel="stylesheet" href="{% static 'mahasiswa/css/index.css' %}">
+        <img src="{% static 'mahasiswa/img/LOGO USMJAYA.png' %}"
+             alt="Logo"
+             class="logo">
+
+        <h2>Selamat Datang di Praktikum RPL</h2>
+
+        <p>
+            Sistem informasi sederhana berbasis Django untuk
+            mengelola data mahasiswa dan mempelajari konsep
+            pengembangan aplikasi web menggunakan framework Django.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="{% url 'daftar_mahasiswa' %}" class="btn-primary">
+                Lihat Data Mahasiswa
+            </a>
+        </div>
+
+    </div>
+</section>
+
+{% endblock %}
